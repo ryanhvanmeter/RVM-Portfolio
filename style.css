@@ -1,14 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f0f2f5;
+    color: #333;
 }
 
 header {
     background: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -20,37 +21,69 @@ header {
 
 .logo {
     margin-right: 20px;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+#about {
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    border-radius: 10px;
 }
 
 #portfolio {
     padding: 20px;
     text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #555;
 }
 
 .portfolio-row {
@@ -61,25 +94,48 @@ section {
 
 .portfolio-item {
     background: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {
     max-width: 100%;
     border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h4 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+}
+
+.portfolio-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
