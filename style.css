@@ -12,6 +12,18 @@ header {
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+
 header h1 {
     margin: 0;
 }
@@ -37,9 +49,14 @@ section {
 }
 
 #portfolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
@@ -49,43 +66,12 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    box-sizing: border-box;
 }
 
 .portfolio-item img {
     max-width: 100%;
     border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #555;
 }
 
 footer {
