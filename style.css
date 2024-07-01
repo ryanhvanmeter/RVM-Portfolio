@@ -153,7 +153,7 @@ h3 a:hover {
 }
 
 #link-preview img {
-    width: 300px; /* Adjust the width to make the image larger */
+    width: 400px; /* Adjusted width to make the image larger */
     margin-bottom: 10px;
     border-radius: 10px;
     transition: transform 0.3s;
