@@ -176,3 +176,49 @@ footer p {
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
+
+/* Additional CSS for scrolling logos and photoshop items */
+#logos .scroll-container,
+#photoshop .scroll-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+#logos .scroll-content,
+#photoshop .scroll-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#logos .portfolio-item,
+#photoshop .portfolio-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#logos .portfolio-item img,
+#photoshop .portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#logos .portfolio-item h4,
+#photoshop .portfolio-item h4 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#logos .portfolio-item p,
+#photoshop .portfolio-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
