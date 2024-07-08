@@ -1,3 +1,4 @@
+/* Main body and general styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -146,9 +147,21 @@ h3 a:hover {
     gap: 20px;
 }
 
-.video-container {
-    margin: 40px auto;
-    max-width: 800px;
+.video-item {
+    display: inline-block;
+    width: 800px; /* Adjust the width to your preference */
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 450px; /* Adjust the height to your preference */
+    border-radius: 10px;
 }
 
 #link-preview {
